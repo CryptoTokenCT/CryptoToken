@@ -1,18 +1,40 @@
-// Dark Mode Toggle
-const toggle = document.getElementById('themeToggle');
-const body = document.body;
+// Scroll-to-Top Button
+const scrollToTopButton = document.getElementById('scrollToTop');
 
-toggle.addEventListener('click', () => {
-    body.classList.toggle('light-theme');
-    toggle.textContent = body.classList.contains('light-theme') ? 'Dark Mode' : 'Light Mode';
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        scrollToTopButton.classList.add('show');
+    } else {
+        scrollToTopButton.classList.remove('show');
+    }
 });
 
-// Smooth Scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
+scrollToTopButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+// Newsletter Form Validation
+const form = document.getElementById('newsletterForm');
+const emailInput = document.getElementById('email');
+const formMessage = document.getElementById('formMessage');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = emailInput.value;
+
+    if (!validateEmail(email)) {
+        formMessage.textContent = 'Please enter a valid email address.';
+        formMessage.className = 'form-message error';
+        formMessage.style.display = 'block';
+    } else {
+        formMessage.textContent = 'Thank you for subscribing!';
+        formMessage.className = 'form-message success';
+        formMessage.style.display = 'block';
+        form.submit();
+    }
+});
+
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+}
