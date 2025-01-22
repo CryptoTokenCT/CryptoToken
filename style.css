@@ -3,29 +3,30 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background: #1F1F1F; /* Dark gray background */
-    color: #FFFFFF; /* White text */
+    background: #1E2235; /* Midnight Blue Background */
+    color: #E5E5E5; /* Off-White Text */
 }
 
 h1, h2, h3 {
-    color: #FFFFFF; /* White headings */
+    color: #E5E5E5; /* Off-White Headings */
     margin-bottom: 20px;
     text-align: center;
     text-transform: capitalize;
 }
 
 p {
-    color: #B3B3B3; /* Light gray for regular text */
+    color: #A9A9A9; /* Light Gray for Paragraphs */
     margin-bottom: 20px;
 }
 
 a {
-    color: #3B82F6; /* Neon blue for links */
+    color: #00D1FF; /* Bright Teal Links */
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
-    color: #9333EA; /* Neon purple hover effect */
+    color: #6C5DD3; /* Deep Purple Hover */
     text-decoration: underline;
 }
 
@@ -33,31 +34,31 @@ a:hover {
 header {
     text-align: center;
     padding: 40px 20px;
-    background-color: #111827; /* Darker gray */
+    background-color: #282C4F; /* Darker Purple */
 }
 
 header .logo {
     max-width: 150px;
-    border: 4px solid #3B82F6; /* Neon blue border */
+    border: 4px solid #6C5DD3; /* Deep Purple Border */
     border-radius: 50%;
     margin-bottom: 20px;
 }
 
 header h1 {
     font-size: 2.5em;
-    color: #3B82F6; /* Neon blue */
+    color: #00D1FF; /* Bright Teal for Headline */
 }
 
 header p {
     font-size: 1.2em;
-    color: #9333EA; /* Neon purple */
+    color: #E5E5E5; /* Off-White Subheading */
 }
 
 header .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #3B82F6; /* Neon blue */
-    color: #FFFFFF;
+    background-color: #6C5DD3; /* Deep Purple Button */
+    color: #FFFFFF; /* White Text */
     border-radius: 5px;
     font-weight: bold;
     margin-top: 20px;
@@ -65,7 +66,7 @@ header .cta-button {
 }
 
 header .cta-button:hover {
-    background-color: #9333EA; /* Neon purple hover effect */
+    background-color: #00D1FF; /* Bright Teal Hover */
     color: #FFFFFF;
 }
 
@@ -76,27 +77,27 @@ header .cta-button:hover {
 }
 
 .social-icons a {
-    color: #3B82F6;
+    color: #6C5DD3;
     margin: 0 10px;
     font-size: 1.5em;
 }
 
 .social-icons a:hover {
-    color: #9333EA;
+    color: #00D1FF;
 }
 
 /* Navigation */
 nav {
     display: flex;
     justify-content: center;
-    background: #1E293B; /* Dark blue-gray */
+    background: #282C4F; /* Darker Purple */
     padding: 10px 0;
     flex-wrap: wrap;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 nav a {
-    color: #FFFFFF; /* White text */
+    color: #E5E5E5; /* Off-White Text */
     padding: 10px 20px;
     margin: 0 10px;
     border-radius: 5px;
@@ -105,7 +106,7 @@ nav a {
 }
 
 nav a:hover {
-    background: #3B82F6; /* Neon blue hover */
+    background: #6C5DD3; /* Deep Purple Hover */
     color: #FFFFFF;
 }
 
@@ -116,28 +117,28 @@ section {
 }
 
 .section-light {
-    background: #1F1F1F; /* Dark gray */
+    background: #1E2235; /* Midnight Blue */
 }
 
 .section-dark {
-    background: #111827; /* Even darker gray */
+    background: #282C4F; /* Darker Purple */
     color: #FFFFFF;
 }
 
 .section-dark h2, .section-dark p {
-    color: #FFFFFF;
+    color: #E5E5E5;
 }
 
 /* Divider */
 .section-divider {
-    border-bottom: 3px solid #3B82F6; /* Neon blue divider */
+    border-bottom: 3px solid #6C5DD3; /* Deep Purple Divider */
     margin: 40px auto;
     width: 50%;
 }
 
 /* Features Section */
 .features {
-    background: #1E293B; /* Dark blue-gray */
+    background: #282C4F; /* Darker Purple */
 }
 
 .feature-grid {
@@ -148,8 +149,8 @@ section {
 }
 
 .feature-item {
-    background: #111827; /* Dark gray */
-    border: 2px solid #3B82F6; /* Neon blue border */
+    background: #1E2235; /* Midnight Blue */
+    border: 2px solid #6C5DD3; /* Deep Purple Border */
     border-radius: 10px;
     padding: 20px;
     flex: 1 1 300px;
@@ -160,18 +161,18 @@ section {
 
 .feature-item i {
     font-size: 3em;
-    color: #3B82F6; /* Neon blue */
+    color: #00D1FF; /* Bright Teal */
     margin-bottom: 10px;
 }
 
 .feature-item h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #9333EA; /* Neon purple */
+    color: #6C5DD3; /* Deep Purple */
 }
 
 .feature-item p {
-    color: #B3B3B3;
+    color: #A9A9A9; /* Light Gray */
 }
 
 /* How to Buy Section */
@@ -184,7 +185,7 @@ section {
 }
 
 .how-to-buy .step {
-    background: #111827; /* Dark gray */
+    background: #282C4F; /* Darker Purple */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
@@ -195,24 +196,18 @@ section {
 
 .how-to-buy .step i {
     font-size: 3em;
-    color: #3B82F6; /* Neon blue */
+    color: #00D1FF; /* Bright Teal */
     margin-bottom: 10px;
 }
 
 .how-to-buy .step h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #9333EA; /* Neon purple */
+    color: #6C5DD3; /* Deep Purple */
 }
 
 .how-to-buy .step p {
-    color: #B3B3B3;
-}
-
-.how-to-buy .cta-button {
-    margin-top: 20px;
-    background-color: #3B82F6;
-    color: #FFFFFF;
+    color: #A9A9A9;
 }
 
 /* Roadmap Section */
@@ -222,7 +217,7 @@ section {
     text-align: left;
     max-width: 800px;
     margin: 0 auto;
-    color: #B3B3B3;
+    color: #A9A9A9;
 }
 
 /* Tokenomics Section */
@@ -231,22 +226,22 @@ section {
     padding: 0;
     max-width: 800px;
     margin: 0 auto;
-    color: #B3B3B3;
+    color: #A9A9A9;
 }
 
 /* FAQ Section */
 .faq .faq-item h3 {
-    color: #3B82F6; /* Neon blue */
+    color: #00D1FF; /* Bright Teal */
 }
 
 .faq .faq-item p {
-    color: #B3B3B3;
+    color: #A9A9A9;
 }
 
 /* Footer */
 footer {
-    background: #111827; /* Dark gray */
-    color: #B3B3B3; /* Light gray text */
+    background: #282C4F; /* Darker Purple */
+    color: #A9A9A9; /* Light Gray */
     padding: 20px;
     text-align: center;
     font-size: 0.9em;
