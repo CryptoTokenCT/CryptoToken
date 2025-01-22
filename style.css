@@ -7,25 +7,11 @@ body {
     color: #f0f0f0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #ffffff;
-}
-
-p, a {
-    color: #e0e0e0;
-}
-
-a:hover {
-    color: #ffd700;
-    text-decoration: underline;
-}
-
-/* Header Styles */
+/* Header */
 header {
     text-align: center;
     padding: 20px;
     background-color: #4c69ba;
-    color: #ffffff;
 }
 
 header .logo {
@@ -34,164 +20,13 @@ header .logo {
     border-radius: 50%;
 }
 
-header h1 {
-    margin: 10px 0;
-    font-size: 2.5em;
-    color: #ffd700;
-}
-
-header p {
-    font-size: 1.2em;
+header h1, header p {
     color: #ffffff;
 }
 
-header .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ffd700;
-    color: #333;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-header .cta-button:hover {
-    background-color: #f0c000;
-    color: #222;
-}
-
-/* Navigation */
-nav {
-    display: flex;
-    justify-content: center;
-    background: #4c69ba;
-    padding: 10px 0;
-}
-
-nav a {
-    color: #f0f0f0;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-size: 1.1em;
-    border-radius: 5px;
-}
-
-nav a:hover {
-    background: #ffd700;
-    color: #000;
-}
-
-/* Sections */
-section {
-    padding: 20px;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-.section-divider {
-    border-bottom: 2px solid #ffd700;
-    margin: 20px auto;
-    width: 80%;
-}
-
-/* Features Grid */
-.feature-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.feature-item {
-    text-align: center;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.feature-item i {
-    color: #ffd700;
-    margin-bottom: 10px;
-}
-
-.feature-item h3 {
-    color: #ffd700;
-    margin-bottom: 10px;
-}
-
-.feature-item p {
-    color: #f0f0f0;
-}
-
-/* How-to-Buy Section */
-.how-to-buy h2,
-.how-to-buy p,
-.step p {
-    color: #ffffff; /* Ensures all text in this section is white */
-}
-
-.buy-steps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.step {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 300px;
-}
-
-.step i {
-    color: #ffd700;
-    margin-bottom: 10px;
-}
-
-.step h3 {
-    color: #ffd700;
-    margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #3b5998;
-    color: #ffffff;
-    font-size: 0.9em;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Social Media Icons */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 20px 0;
-}
-
-.social-icons a {
-    color: #ffffff;
-    font-size: 1.5em;
-    transition: color 0.3s;
-}
-
-.social-icons a:hover {
-    color: #ffd700;
-}
-
-/* Loading Spinner */
+/* Spinner */
 #loading-spinner {
-    display: flex; /* Ensure spinner is displayed initially */
+    display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
