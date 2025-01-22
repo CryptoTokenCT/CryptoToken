@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChonkCoin</title>
-    <link rel="icon" href="https://drive.google.com/uc?id=1T35qvUME980SESR3CbmuB0qWynmjX1fM" type="image/png">
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
