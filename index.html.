@@ -3,61 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChonkCoin</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ChonkCoin - The Fluffiest Coin</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .banner {
+            background-color: #ff99cc;
+            color: #fff;
             text-align: center;
             padding: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
         }
-        img {
-            max-width: 100%;
-            height: auto;
+
+        .content {
+            padding: 20px;
+            text-align: center;
         }
-        button {
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+
+        .content img {
+            max-width: 300px;
+            margin: 20px auto;
         }
-        section {
-            margin: 20px 0;
+
+        .social-links {
+            margin-top: 30px;
         }
-        footer {
-            margin-top: 20px;
+
+        .social-links a {
+            text-decoration: none;
+            color: #0077cc;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to ChonkCoin!</h1>
-    <img src="https://drive.google.com/uc?id=1T35qvUME980SESR3CbmuB0qWynmjX1fM" alt="ChonkCoin Logo">
-    <p>The Dogecoin of cats, with 100% more belly fluff. Join the Chonk revolution!</p>
-    <p>Contract Address: 0x18aA14F13Ba29Bf6278aeA84e8734F5D6015886D</p>
-    <a href="https://app.uniswap.org/#/swap?outputCurrency=0x18aA14F13Ba29Bf6278aeA84e8734F5D6015886D" target="_blank">
-        <button>Buy ChonkCoin</button>
-    </a>
+    <header>
+        Welcome to ChonkCoin
+    </header>
 
-    <section>
-        <h2>What is ChonkCoin?</h2>
-        <p>ChonkCoin is a community-driven cryptocurrency inspired by the fluffiest cats. Built for fun and powered by memes, it aims to revolutionize the crypto world with belly fluff power!</p>
-    </section>
+    <div class="banner">
+        Forget Dogecoin—get fluffy with ChonkCoin. 🐱 #ChonkToTheMoon 🚀
+    </div>
 
-    <section>
-        <h2>Roadmap</h2>
-        <ul>
-            <li>Q1 2025: Launch ChonkCoin on major DEXs.</li>
-            <li>Q2 2025: Build community and partnerships.</li>
-            <li>Q3 2025: List on centralized exchanges.</li>
-            <li>Q4 2025: Global ChonkCoin domination.</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>Follow us on:</p>
-        <a href="https://x.com/TheChonkCoin" target="_blank">Twitter</a>
-    </footer>
+    <div class="content">
+        <h1>What is ChonkCoin?</h1>
+        <p>The Dogecoin of cats, but with 100% more belly fluff. Join the Chonk revolution!</p>
+        <img src="https://drive.google.com/uc?export=view&id=1T35qvUME980SESR3CbmuB0qWynmjX1fM" alt="ChonkCoin Logo">
+        <div class="social-links">
+            <h2>Follow Us</h2>
+            <a href="https://x.com/TheChonkCoin" target="_blank">Twitter (X)</a>
+        </div>
+    </div>
 </body>
 </html>
