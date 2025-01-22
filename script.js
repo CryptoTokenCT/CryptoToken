@@ -1,17 +1,27 @@
 // Wait until the DOM content is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
-    // Select the loading spinner element
-    const loadingSpinner = document.getElementById('loading-spinner');
-
-    // Hide the spinner once the page has fully loaded
-    if (loadingSpinner) {
-        loadingSpinner.style.display = 'none';
-    }
-
-    console.log('Page loaded successfully, loading spinner removed.');
+    console.log('DOMContentLoaded triggered. Removing spinner.');
+    removeSpinner();
 });
 
-// Example: Smooth scrolling for navigation links
+// Backup: Ensure the spinner is removed after 5 seconds
+setTimeout(() => {
+    console.log('Backup timeout triggered. Removing spinner.');
+    removeSpinner();
+}, 5000);
+
+// Function to safely remove the loading spinner
+function removeSpinner() {
+    const loadingSpinner = document.getElementById('loading-spinner');
+    if (loadingSpinner) {
+        loadingSpinner.style.display = 'none'; // Hide spinner
+        console.log('Loading spinner removed.');
+    } else {
+        console.log('Loading spinner not found.');
+    }
+}
+
+// Smooth scrolling for navigation links
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (event) {
         event.preventDefault();
@@ -25,7 +35,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-// Example: Add hover effect to navigation items
+// Add hover effect to navigation items
 document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('mouseenter', function () {
         this.style.color = '#ffd700'; // Change text color to gold on hover
@@ -35,7 +45,7 @@ document.querySelectorAll('nav a').forEach(link => {
     });
 });
 
-// Example: Testimonial slider (optional future feature)
+// Testimonial slider (optional future feature)
 let currentTestimonial = 0;
 const testimonials = document.querySelectorAll('.testimonial');
 if (testimonials.length > 0) {
