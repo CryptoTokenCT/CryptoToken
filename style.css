@@ -2,43 +2,27 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    background: #fff4e0; /* Light beige background */
-    color: #4a3c2a; /* Dark brown text */
+    background: #fff4e0; /* Light beige */
+    color: #4a3c2a;
 }
 
-/* Section Titles */
-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #a67c00; /* Warm brown */
-    text-transform: uppercase;
+/* Features Section */
+.features {
+    background: #ffcc4d; /* Golden yellow */
 }
 
-/* Testimonials Section */
-.testimonials {
-    background: #ffe8c2; /* Light gold background */
-    padding: 40px 20px;
+.feature-item {
+    background: rgba(255, 223, 117, 0.2); /* Light transparent gold */
 }
 
-.testimonial {
-    margin-bottom: 20px; /* Space between testimonials */
+/* How to Buy Section */
+.buy-steps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.testimonial p {
-    font-size: 1.2em;
-    color: #4a3c2a; /* Dark brown for text */
-    font-style: italic;
-    margin-bottom: 5px; /* Reduced space between quote and name */
-}
-
-.testimonial h4 {
-    font-size: 1em;
-    color: #a67c00; /* Warm brown for names */
-    margin: 0; /* No extra margin for names */
-}
-
-.testimonial span.name {
-    font-weight: bold;
-    color: #ffd700; /* Gold for emphasis on names */
+.step {
+    background: rgba(255, 223, 117, 0.2);
+    flex: 1 1 30%; /* Three boxes side by side */
 }
