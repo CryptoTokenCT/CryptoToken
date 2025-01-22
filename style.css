@@ -218,23 +218,51 @@ section {
     color: #ffffff;
 }
 
-/* Testimonials */
-.testimonials {
-    background: #ffe8c2; /* Light gold */
+/* Roadmap Section */
+.roadmap ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.testimonial {
-    margin-bottom: 20px;
+.roadmap ul li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #ffffff; /* White text */
 }
 
-.testimonial p {
-    font-style: italic;
-    color: #4a3c2a;
+/* Tokenomics Section */
+.tokenomics ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.testimonial h4 {
-    margin: 10px 0 0;
-    color: #a67c00; /* Warm brown */
+.tokenomics ul li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #4a3c2a; /* Dark brown */
+}
+
+/* FAQ Section */
+.faq .faq-item {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.faq .faq-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffd700; /* Gold for question headings */
+}
+
+.faq .faq-item p {
+    margin-bottom: 0;
+    color: #ffffff; /* White for answers */
 }
 
 /* Footer */
