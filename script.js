@@ -2,21 +2,21 @@
 function removeSpinner() {
     const loadingSpinner = document.getElementById('loading-spinner');
     if (loadingSpinner) {
-        loadingSpinner.style.display = 'none'; // Hide the spinner
-        console.log('Loading spinner successfully removed.');
+        loadingSpinner.style.display = 'none';
+        console.log('Spinner removed successfully.');
     } else {
-        console.error('Loading spinner element not found.');
+        console.error('Spinner element not found.');
     }
 }
 
-// Ensure the spinner is removed after the DOM is loaded
+// DOM Content Loaded Listener
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOMContentLoaded event triggered.');
+    console.log('Page loaded. Removing spinner...');
     removeSpinner();
 });
 
-// Backup: Ensure the spinner is removed after a maximum of 5 seconds
+// Backup: Ensure spinner is removed after 5 seconds
 setTimeout(() => {
-    console.log('Backup timeout triggered. Removing spinner.');
+    console.log('Backup timeout triggered. Removing spinner...');
     removeSpinner();
 }, 5000);
