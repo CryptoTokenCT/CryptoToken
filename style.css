@@ -1,18 +1,15 @@
 /* General Reset and Body */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background: linear-gradient(to right, #ffefba, #ffffff);
     color: #333;
     overflow-x: hidden;
 }
 
-h2 {
-    font-size: 2.5rem;
-    color: #ffd700;
-    text-align: center;
-    margin: 20px 0;
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Header */
@@ -20,6 +17,8 @@ header {
     text-align: center;
     padding: 30px;
     background: linear-gradient(to right, #1b0063, #4c1b82);
+    background-size: 200% 200%;
+    animation: gradientShift 6s ease infinite;
     color: #fff;
 }
 
@@ -27,6 +26,15 @@ header .logo {
     max-width: 120px;
     margin: 10px auto;
     display: block;
+    border: 4px solid #ffd700; /* Gold border */
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+header .logo:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
 }
 
 header p {
@@ -37,17 +45,18 @@ header p {
 header .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background: #ffd700;
+    background: linear-gradient(90deg, #ff007b, #ffd700); /* Gradient button */
     color: #292048;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
     font-weight: bold;
     font-size: 1.1rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 header .cta-button:hover {
-    background: #ff007b;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     color: #fff;
 }
 
@@ -63,25 +72,51 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: #f0e68c;
     text-decoration: none;
     padding: 10px 15px;
     margin: 0 10px;
     font-size: 1.1rem;
     border-radius: 5px;
+    font-weight: bold;
     transition: all 0.3s ease;
 }
 
 nav a:hover {
-    background: #ffd700;
-    color: #292048;
+    color: #ffcc00;
 }
 
 /* Section General Styles */
 section {
     padding: 40px 20px;
-    text-align: center;
     margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#about {
+    background: linear-gradient(to right, #ffefba, #ffffff);
+}
+
+#features {
+    background: linear-gradient(to right, #2b0058, #1e1e66);
+}
+
+#how-to-buy {
+    background: linear-gradient(to right, #1b0063, #4c1b82);
+}
+
+#roadmap, #tokenomics, #faq {
+    background: linear-gradient(to right, #292048, #1e1e66);
+}
+
+/* Divider */
+.section-divider {
+    height: 4px;
+    width: 80%;
+    margin: 20px auto;
+    background: #ffd700;
+    border-radius: 5px;
 }
 
 /* Features Section */
@@ -105,19 +140,11 @@ section {
 
 .feature-item i {
     color: #ffd700;
-    margin-bottom: 10px;
     font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 /* How to Buy Section */
-.how-to-buy {
-    background: linear-gradient(to right, #2b0058, #1e1e66);
-    color: #fff;
-    border-radius: 15px;
-    margin: 40px auto;
-    max-width: 1200px;
-}
-
 .buy-steps {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -140,63 +167,36 @@ section {
 
 .step i {
     color: #ffd700;
-    margin-bottom: 10px;
     font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 12px 25px;
-    margin-top: 20px;
+/* Floating Social Media Buttons */
+.social-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.social-icons a {
+    background: #292048;
+    color: #ffd700;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
     background: #ffd700;
     color: #292048;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.cta-button:hover {
-    background: #ff007b;
-    color: #fff;
-}
-
-/* Roadmap Section */
-.roadmap-timeline {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.phase {
-    background: #292048;
-    color: #fff;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.phase h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-/* Tokenomics Section */
-.tokenomics ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px auto;
-    max-width: 600px;
-    text-align: left;
-}
-
-.tokenomics li {
-    background: #292048;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px 0;
 }
 
 /* FAQ Section */
@@ -224,38 +224,38 @@ footer {
 }
 
 footer a {
-    color: #ffd700;
-    text-decoration: none;
+    color: #aad8f0;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #0088cc;
 }
 
-/* Floating Social Media Icons */
-.social-icons {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    z-index: 1000;
+/* Scroll Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.social-icons a {
-    background: #292048;
-    color: #fff;
-    padding: 10px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 1.2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, background 0.3s ease;
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
-.social-icons a:hover {
-    transform: scale(1.2);
-    background: #ffd700;
-    color: #292048;
+.fade-in-delayed {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Gradient Animation */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
