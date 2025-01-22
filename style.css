@@ -4,19 +4,19 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     background: linear-gradient(to right, #3b5998, #8b9dc3);
-    color: #f0f0f0; /* Light text for readability */
+    color: #f0f0f0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #ffffff; /* White text for headings */
+    color: #ffffff;
 }
 
 p, a {
-    color: #e0e0e0; /* Light gray for regular text and links */
+    color: #e0e0e0;
 }
 
 a:hover {
-    color: #ffd700; /* Gold hover effect */
+    color: #ffd700;
     text-decoration: underline;
 }
 
@@ -30,7 +30,7 @@ header {
 
 header .logo {
     max-width: 150px;
-    border: 4px solid #ffd700; /* Added border */
+    border: 4px solid #ffd700;
     border-radius: 50%;
 }
 
@@ -128,16 +128,10 @@ section {
 }
 
 /* How-to-Buy Section */
-.how-to-buy {
-    background: rgba(0, 0, 0, 0.3); /* Slight background contrast */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
 .how-to-buy h2,
-.how-to-buy p {
-    color: #ffffff; /* Ensure all text in this section is white */
+.how-to-buy p,
+.step p {
+    color: #ffffff; /* Ensures all text in this section is white */
 }
 
 .buy-steps {
@@ -148,12 +142,11 @@ section {
 }
 
 .step {
-    background: rgba(255, 255, 255, 0.1); /* Slight transparency */
+    background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     max-width: 300px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .step i {
@@ -162,12 +155,8 @@ section {
 }
 
 .step h3 {
-    color: #ffd700; /* Gold for step titles */
+    color: #ffd700;
     margin-bottom: 10px;
-}
-
-.step p {
-    color: #ffffff; /* Updated to white for readability */
 }
 
 /* Footer */
@@ -202,7 +191,7 @@ footer {
 
 /* Loading Spinner */
 #loading-spinner {
-    display: flex;
+    display: flex; /* Ensure spinner is displayed initially */
     justify-content: center;
     align-items: center;
     position: fixed;
