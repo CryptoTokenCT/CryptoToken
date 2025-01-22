@@ -3,24 +3,33 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to right, #fff4e0, #ffe8c2); /* Soft beige and light gold */
+    background: #fff4e0; /* Light beige */
     color: #4a3c2a; /* Dark brown text */
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #4a3c2a; /* Dark brown headings */
+h1, h2, h3 {
+    color: #4a3c2a; /* Dark brown for headings */
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: capitalize;
 }
 
-p, a {
-    color: #4a3c2a; /* Dark brown text */
+p {
+    color: #4a3c2a;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #a67c00; /* Warm brown for links */
+    text-decoration: none;
 }
 
 a:hover {
-    color: #ffd700; /* Gold hover effect for links */
+    color: #ffd700; /* Gold hover effect */
     text-decoration: underline;
 }
 
-/* Container: Ensure consistent width across sections */
+/* Container for Consistent Section Width */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -30,41 +39,56 @@ a:hover {
 /* Header */
 header {
     text-align: center;
-    padding: 20px;
-    background-color: #ffcc4d; /* Golden yellow background */
+    padding: 40px 20px;
+    background-color: #ffd700; /* Gold background */
 }
 
 header .logo {
     max-width: 150px;
-    border: 4px solid #ffd700; /* Gold border */
+    border: 4px solid #4a3c2a; /* Dark brown border */
     border-radius: 50%;
+    margin-bottom: 20px;
 }
 
 header h1 {
-    color: #a67c00; /* Warm brown for title */
     font-size: 2.5em;
-    margin: 10px 0;
+    color: #4a3c2a;
 }
 
 header p {
     font-size: 1.2em;
-    color: #ffffff; /* White text for contrast */
+    color: #ffffff; /* White text */
 }
 
 header .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ffd700; /* Gold button */
-    color: #4a3c2a; /* Dark brown text */
-    text-decoration: none;
+    background-color: #4a3c2a; /* Dark brown button */
+    color: #ffffff; /* White text */
     border-radius: 5px;
-    margin-top: 20px;
     font-weight: bold;
+    margin-top: 20px;
 }
 
 header .cta-button:hover {
-    background-color: #e0b600; /* Slightly darker gold on hover */
-    color: #ffffff; /* White text on hover */
+    background-color: #a67c00; /* Warm brown hover effect */
+    color: #ffffff;
+}
+
+/* Social Icons */
+.social-icons {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.social-icons a {
+    color: #4a3c2a;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.social-icons a:hover {
+    color: #ffd700;
 }
 
 /* Navigation */
@@ -73,122 +97,163 @@ nav {
     justify-content: center;
     background: #ffe8c2; /* Light gold */
     padding: 10px 0;
-    flex-wrap: wrap; /* Ensure navigation wraps on smaller screens */
+    flex-wrap: wrap;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 nav a {
-    color: #4a3c2a; /* Dark brown text */
-    text-decoration: none;
+    color: #4a3c2a; /* Dark brown */
     padding: 10px 20px;
     margin: 0 10px;
-    font-size: 1.1em;
     border-radius: 5px;
+    font-size: 1.1em;
 }
 
 nav a:hover {
-    background: #ffd700; /* Gold hover effect */
-    color: #4a3c2a; /* Dark brown text on hover */
+    background: #ffd700;
+    color: #ffffff;
 }
 
-/* Section Styles */
+/* Sections */
 section {
-    padding: 40px 20px; /* Consistent padding */
+    padding: 60px 20px;
     text-align: center;
-}
-
-.section-dark {
-    background: #ffd700; /* Gold background for contrast */
-    color: #4a3c2a; /* Dark brown text */
 }
 
 .section-light {
-    background: #fff4e0; /* Light beige background */
-    color: #4a3c2a; /* Dark brown text */
+    background: #fff4e0; /* Light beige */
 }
 
+.section-dark {
+    background: #4a3c2a; /* Dark brown */
+    color: #ffffff; /* White text for dark sections */
+}
+
+.section-dark h2, .section-dark p {
+    color: #ffffff;
+}
+
+/* Divider */
 .section-divider {
-    border-bottom: 2px solid #ffd700; /* Gold divider */
-    margin: 20px auto;
-    width: 80%;
+    border-bottom: 3px solid #ffd700;
+    margin: 40px auto;
+    width: 50%;
 }
 
-/* Features Grid */
+/* Features Section */
+.features {
+    background: #ffd700; /* Gold */
+}
+
 .feature-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
+    justify-content: center;
 }
 
 .feature-item {
-    text-align: center;
-    background: rgba(255, 223, 117, 0.1); /* Subtle golden highlight */
-    padding: 20px;
+    background: #fff4e0; /* Light beige */
+    border: 2px solid #ffd700; /* Gold border */
     border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 300px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1 1 300px; /* Responsive grid items */
+    text-align: center;
 }
 
 .feature-item i {
-    color: #ffd700; /* Gold for icons */
+    font-size: 3em;
+    color: #ffd700; /* Gold */
     margin-bottom: 10px;
 }
 
 .feature-item h3 {
-    color: #a67c00; /* Warm brown for titles */
+    font-size: 1.5em;
     margin-bottom: 10px;
+    color: #4a3c2a;
 }
 
 .feature-item p {
-    color: #4a3c2a; /* Dark brown for readability */
+    color: #4a3c2a;
 }
 
-/* How-to-Buy Section */
+/* How to Buy Section */
+.how-to-buy .buy-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
 .how-to-buy .step {
-    background: rgba(255, 223, 117, 0.1); /* Subtle golden highlight */
-    padding: 20px;
+    background: #ffe8c2; /* Light gold */
     border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
     text-align: center;
-    max-width: 300px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    flex: 1 1 300px; /* Responsive grid items */
 }
 
 .how-to-buy .step i {
-    color: #ffd700; /* Gold for step icons */
+    font-size: 3em;
+    color: #ffd700;
     margin-bottom: 10px;
 }
 
 .how-to-buy .step h3 {
-    color: #a67c00; /* Warm brown for step titles */
+    font-size: 1.5em;
     margin-bottom: 10px;
+    color: #4a3c2a;
 }
 
 .how-to-buy .step p {
-    color: #4a3c2a; /* Dark brown text */
+    color: #4a3c2a;
+}
+
+.how-to-buy .cta-button {
+    margin-top: 20px;
+    background-color: #4a3c2a;
+    color: #ffffff;
+}
+
+/* Testimonials */
+.testimonials {
+    background: #ffe8c2; /* Light gold */
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #4a3c2a;
+}
+
+.testimonial h4 {
+    margin: 10px 0 0;
+    color: #a67c00; /* Warm brown */
 }
 
 /* Footer */
 footer {
+    background: #4a3c2a; /* Dark brown */
+    color: #ffffff;
+    padding: 20px;
     text-align: center;
-    padding: 20px 10px;
-    background: #ffcc4d; /* Golden yellow background */
-    color: #ffffff; /* White text */
     font-size: 0.9em;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
     .feature-grid, .buy-steps {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        gap: 20px;
+        flex-direction: column;
     }
 
     nav a {
         padding: 10px;
-        font-size: 0.9em; /* Slightly smaller font for navigation links */
+        font-size: 1em;
     }
 }
