@@ -1,23 +1,47 @@
-// Scroll-to-Top Button
-const scrollToTopButton = document.getElementById('scrollToTop');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 200) {
-        scrollToTopButton.style.display = 'block';
-    } else {
-        scrollToTopButton.style.display = 'none';
+// Wait until the DOM content is fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    // Select the loading spinner element
+    const loadingSpinner = document.getElementById('loading-spinner');
+
+    // Hide the spinner once the page has fully loaded
+    if (loadingSpinner) {
+        loadingSpinner.style.display = 'none';
     }
+
+    console.log('Page loaded successfully, loading spinner removed.');
 });
 
-scrollToTopButton.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
-// Smooth Scroll for Navigation Links
+// Example: Smooth scrolling for navigation links
 document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-        targetElement.scrollIntoView({ behavior: 'smooth' });
+    anchor.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        const targetSection = document.querySelector(this.getAttribute('href'));
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     });
 });
+
+// Example: Add hover effect to navigation items
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('mouseenter', function () {
+        this.style.color = '#ffd700'; // Change text color to gold on hover
+    });
+    link.addEventListener('mouseleave', function () {
+        this.style.color = ''; // Revert to default text color
+    });
+});
+
+// Example: Testimonial slider (optional future feature)
+let currentTestimonial = 0;
+const testimonials = document.querySelectorAll('.testimonial');
+if (testimonials.length > 0) {
+    setInterval(() => {
+        testimonials[currentTestimonial].style.display = 'none'; // Hide current testimonial
+        currentTestimonial = (currentTestimonial + 1) % testimonials.length; // Move to the next
+        testimonials[currentTestimonial].style.display = 'block'; // Show next testimonial
+    }, 5000); // Change every 5 seconds
+}
