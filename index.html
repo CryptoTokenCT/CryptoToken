@@ -7,8 +7,12 @@
     <title>ChonkCoin</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <div id="loading-spinner">
+        <div class="spinner"></div>
+    </div>
     <header>
         <img src="images/D1952F41-4E74-4CFC-B809-38E761CCB863_1_105_c.jpeg" alt="ChonkCoin Logo" class="logo">
         <h1>Welcome to ChonkCoin</h1>
@@ -16,11 +20,11 @@
         <a href="#community" class="cta-button">Join Now</a>
     </header>
     <nav>
-        <a href="#about">About</a>
-        <a href="#community">Community</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#newsletter">Newsletter</a>
-        <button id="themeToggle" class="theme-button">Dark Mode</button>
+        <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+        <a href="#community"><i class="fas fa-users"></i> Community</a>
+        <a href="#testimonials"><i class="fas fa-comment"></i> Testimonials</a>
+        <a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a>
+        <a href="#newsletter"><i class="fas fa-envelope"></i> Newsletter</a>
     </nav>
     <main>
         <section id="about" class="about">
@@ -35,25 +39,45 @@
             <h2>What People Are Saying</h2>
             <div class="testimonial">
                 <p>"ChonkCoin is the fluffiest investment I’ve made!"</p>
-                <h4>- Cat Enthusiast</h4>
+                <h4>- <span class="name">Cat Enthusiast</span></h4>
             </div>
             <div class="testimonial">
                 <p>"Finally, a cryptocurrency I can relate to. #ChonkToTheMoon"</p>
-                <h4>- Crypto Cat</h4>
+                <h4>- <span class="name">Crypto Cat</span></h4>
+            </div>
+        </section>
+        <section id="faq" class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What is ChonkCoin?</h3>
+                <p>ChonkCoin is a community-driven meme cryptocurrency celebrating our love for cats.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I join the community?</h3>
+                <p>Follow us on <a href="https://x.com/TheChonkCoin" target="_blank">X</a> and subscribe to our newsletter!</p>
             </div>
         </section>
         <section id="newsletter" class="newsletter">
             <h2>Stay Updated!</h2>
             <p>Sign up for our newsletter to get the latest on ChonkCoin.</p>
-            <form action="https://example.com/subscribe" method="POST">
-                <input type="email" placeholder="Enter your email" required>
+            <form id="newsletterForm" action="https://example.com/subscribe" method="POST">
+                <input type="email" id="email" placeholder="Enter your email" required>
                 <button type="submit">Subscribe</button>
+                <p id="formMessage" class="form-message"></p>
             </form>
         </section>
     </main>
     <footer>
         <p>© 2025 ChonkCoin. All rights reserved.</p>
+        <nav class="footer-nav">
+            <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+            <a href="#community"><i class="fas fa-users"></i> Community</a>
+            <a href="#testimonials"><i class="fas fa-comment"></i> Testimonials</a>
+            <a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a>
+            <a href="#newsletter"><i class="fas fa-envelope"></i> Newsletter</a>
+        </nav>
     </footer>
+    <button id="scrollToTop" class="scroll-to-top">↑ Top</button>
     <script src="script.js"></script>
 </body>
 </html>
