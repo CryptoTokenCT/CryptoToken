@@ -4,7 +4,7 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     background: linear-gradient(to right, #fff4e0, #ffe8c2); /* Soft beige and light gold */
-    color: #4a3c2a; /* Dark brown for text readability */
+    color: #4a3c2a; /* Dark brown text */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,6 +18,13 @@ p, a {
 a:hover {
     color: #ffd700; /* Gold hover effect for links */
     text-decoration: underline;
+}
+
+/* Container: Ensure consistent width across sections */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* Header */
@@ -66,6 +73,7 @@ nav {
     justify-content: center;
     background: #ffe8c2; /* Light gold */
     padding: 10px 0;
+    flex-wrap: wrap; /* Ensure navigation wraps on smaller screens */
 }
 
 nav a {
@@ -82,12 +90,20 @@ nav a:hover {
     color: #4a3c2a; /* Dark brown text on hover */
 }
 
-/* Sections */
+/* Section Styles */
 section {
-    padding: 20px;
+    padding: 40px 20px; /* Consistent padding */
     text-align: center;
-    margin: 0 auto;
-    max-width: 800px;
+}
+
+.section-dark {
+    background: #ffd700; /* Gold background for contrast */
+    color: #4a3c2a; /* Dark brown text */
+}
+
+.section-light {
+    background: #fff4e0; /* Light beige background */
+    color: #4a3c2a; /* Dark brown text */
 }
 
 .section-divider {
@@ -110,6 +126,7 @@ section {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px; /* Responsive grid items */
 }
 
 .feature-item i {
@@ -127,45 +144,34 @@ section {
 }
 
 /* How-to-Buy Section */
-.how-to-buy h2,
-.how-to-buy p {
-    color: #4a3c2a; /* Dark brown text */
-}
-
-.buy-steps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.step {
+.how-to-buy .step {
     background: rgba(255, 223, 117, 0.1); /* Subtle golden highlight */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     max-width: 300px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    flex: 1 1 300px; /* Responsive grid items */
 }
 
-.step i {
+.how-to-buy .step i {
     color: #ffd700; /* Gold for step icons */
     margin-bottom: 10px;
 }
 
-.step h3 {
+.how-to-buy .step h3 {
     color: #a67c00; /* Warm brown for step titles */
     margin-bottom: 10px;
 }
 
-.step p {
+.how-to-buy .step p {
     color: #4a3c2a; /* Dark brown text */
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 10px;
     background: #ffcc4d; /* Golden yellow background */
     color: #ffffff; /* White text */
     font-size: 0.9em;
@@ -174,52 +180,15 @@ footer {
     width: 100%;
 }
 
-/* Social Media Icons */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 20px 0;
-}
-
-.social-icons a {
-    color: #ffd700; /* Gold icons */
-    font-size: 1.5em;
-    transition: color 0.3s;
-}
-
-.social-icons a:hover {
-    color: #e0b600; /* Slightly darker gold on hover */
-}
-
-/* Loading Spinner */
-#loading-spinner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
-    z-index: 1000;
-}
-
-.spinner {
-    border: 5px solid #ddd;
-    border-top: 5px solid #ffd700; /* Gold spinner */
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .feature-grid, .buy-steps {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap: 20px;
     }
-    100% {
-        transform: rotate(360deg);
+
+    nav a {
+        padding: 10px;
+        font-size: 0.9em; /* Slightly smaller font for navigation links */
     }
 }
