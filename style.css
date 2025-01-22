@@ -4,7 +4,7 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     background: linear-gradient(to right, #3b5998, #8b9dc3);
-    color: #f0f0f0; /* Changed to a lighter color for better contrast */
+    color: #f0f0f0; /* Light text for readability */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,7 +16,7 @@ p, a {
 }
 
 a:hover {
-    color: #ffd700; /* Bright gold on hover for emphasis */
+    color: #ffd700; /* Gold hover effect */
     text-decoration: underline;
 }
 
@@ -30,14 +30,14 @@ header {
 
 header .logo {
     max-width: 150px;
-    border: 4px solid #ffd700; /* Added border to make the logo pop */
+    border: 4px solid #ffd700; /* Added border */
     border-radius: 50%;
 }
 
 header h1 {
     margin: 10px 0;
     font-size: 2.5em;
-    color: #ffd700; /* Gold for the main title */
+    color: #ffd700;
 }
 
 header p {
@@ -70,7 +70,7 @@ nav {
 }
 
 nav a {
-    color: #f0f0f0; /* Lighter for better readability */
+    color: #f0f0f0;
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 10px;
@@ -127,7 +127,19 @@ section {
     color: #f0f0f0;
 }
 
-/* How-to-Buy Steps */
+/* How-to-Buy Section */
+.how-to-buy {
+    background: rgba(0, 0, 0, 0.3); /* Slight background contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.how-to-buy h2,
+.how-to-buy p {
+    color: #ffffff; /* Ensure all text in this section is white */
+}
+
 .buy-steps {
     display: flex;
     flex-wrap: wrap;
@@ -136,11 +148,12 @@ section {
 }
 
 .step {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1); /* Slight transparency */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .step i {
@@ -149,17 +162,12 @@ section {
 }
 
 .step h3 {
-    color: #ffd700;
+    color: #ffd700; /* Gold for step titles */
     margin-bottom: 10px;
 }
 
 .step p {
-    color: #ffffff; /* Updated to match the white color for better readability */
-}
-
-.how-to-buy h2, 
-.how-to-buy p {
-    color: #ffffff; /* Ensures all text in the "How to Buy" section matches the white color */
+    color: #ffffff; /* Updated to white for readability */
 }
 
 /* Footer */
