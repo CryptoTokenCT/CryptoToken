@@ -3,15 +3,15 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to right, #3b5998, #8b9dc3);
-    color: #f0f0f0;
+    background: linear-gradient(to right, #f8d16f, #f7e5b4); /* Warm golden tones */
+    color: #333; /* Dark gray for readability */
 }
 
 /* Header */
 header {
     text-align: center;
     padding: 20px;
-    background-color: #4c69ba;
+    background-color: #ffcc4d; /* Rich golden-yellow background */
 }
 
 header .logo {
@@ -20,11 +20,166 @@ header .logo {
     border-radius: 50%;
 }
 
-header h1, header p {
-    color: #ffffff;
+header h1 {
+    color: #ffd700; /* Rich gold for the main title */
+    font-size: 2.5em;
+    margin: 10px 0;
 }
 
-/* Spinner */
+header p {
+    font-size: 1.2em;
+    color: #ffffff; /* White text for better contrast */
+}
+
+header .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd700; /* Gold button */
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+header .cta-button:hover {
+    background-color: #e0b600; /* Slightly darker gold on hover */
+    color: #222;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #ffcc4d; /* Golden yellow for the nav bar */
+    padding: 10px 0;
+}
+
+nav a {
+    color: #333; /* Dark text for better readability */
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #ffd700; /* Gold hover effect */
+    color: #000; /* Black text on hover */
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.section-divider {
+    border-bottom: 2px solid #ffd700; /* Gold divider */
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Features Grid */
+.feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-item {
+    text-align: center;
+    background: rgba(255, 223, 117, 0.1); /* Subtle golden highlight */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item i {
+    color: #ffd700; /* Gold for icons */
+    margin-bottom: 10px;
+}
+
+.feature-item h3 {
+    color: #ffd700; /* Gold for titles */
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    color: #333; /* Dark gray for readability */
+}
+
+/* How-to-Buy Section */
+.how-to-buy h2,
+.how-to-buy p {
+    color: #333; /* Dark gray text for readability */
+}
+
+.buy-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.step {
+    background: rgba(255, 223, 117, 0.1); /* Subtle golden highlight */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.step i {
+    color: #ffd700; /* Gold for step icons */
+    margin-bottom: 10px;
+}
+
+.step h3 {
+    color: #ffd700; /* Gold for step titles */
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: #333; /* Dark gray text */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #ffcc4d; /* Golden yellow background */
+    color: #ffffff; /* White text */
+    font-size: 0.9em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.social-icons a {
+    color: #ffd700; /* Gold icons */
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #e0b600; /* Slightly darker gold on hover */
+}
+
+/* Loading Spinner */
 #loading-spinner {
     display: flex;
     justify-content: center;
@@ -34,13 +189,13 @@ header h1, header p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
     z-index: 1000;
 }
 
 .spinner {
     border: 5px solid #ddd;
-    border-top: 5px solid #ffd700;
+    border-top: 5px solid #ffd700; /* Gold spinner */
     border-radius: 50%;
     width: 40px;
     height: 40px;
