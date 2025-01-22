@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChonkCoin</title>
+    <link rel="icon" href="https://drive.google.com/uc?id=1T35qvUME980SESR3CbmuB0qWynmjX1fM" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        section {
+            margin: 20px 0;
+        }
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to ChonkCoin!</h1>
+    <img src="https://drive.google.com/uc?id=1T35qvUME980SESR3CbmuB0qWynmjX1fM" alt="ChonkCoin Logo">
+    <p>The Dogecoin of cats, with 100% more belly fluff. Join the Chonk revolution!</p>
+    <p>Contract Address: 0x18aA14F13Ba29Bf6278aeA84e8734F5D6015886D</p>
+    <a href="https://app.uniswap.org/#/swap?outputCurrency=0x18aA14F13Ba29Bf6278aeA84e8734F5D6015886D" target="_blank">
+        <button>Buy ChonkCoin</button>
+    </a>
+
+    <section>
+        <h2>What is ChonkCoin?</h2>
+        <p>ChonkCoin is a community-driven cryptocurrency inspired by the fluffiest cats. Built for fun and powered by memes, it aims to revolutionize the crypto world with belly fluff power!</p>
+    </section>
+
+    <section>
+        <h2>Roadmap</h2>
+        <ul>
+            <li>Q1 2025: Launch ChonkCoin on major DEXs.</li>
+            <li>Q2 2025: Build community and partnerships.</li>
+            <li>Q3 2025: List on centralized exchanges.</li>
+            <li>Q4 2025: Global ChonkCoin domination.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Follow us on:</p>
+        <a href="https://x.com/TheChonkCoin" target="_blank">Twitter</a>
+    </footer>
+</body>
+</html>
