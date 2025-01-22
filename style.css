@@ -3,39 +3,52 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to right, #f8d16f, #f7e5b4); /* Warm golden tones */
-    color: #333; /* Dark gray for readability */
+    background: linear-gradient(to right, #fff4e0, #ffe8c2); /* Soft beige and light gold */
+    color: #4a3c2a; /* Dark brown for text readability */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #4a3c2a; /* Dark brown headings */
+}
+
+p, a {
+    color: #4a3c2a; /* Dark brown text */
+}
+
+a:hover {
+    color: #ffd700; /* Gold hover effect for links */
+    text-decoration: underline;
 }
 
 /* Header */
 header {
     text-align: center;
     padding: 20px;
-    background-color: #ffcc4d; /* Rich golden-yellow background */
+    background-color: #ffcc4d; /* Golden yellow background */
 }
 
 header .logo {
     max-width: 150px;
-    border: 4px solid #ffd700;
+    border: 4px solid #ffd700; /* Gold border */
     border-radius: 50%;
 }
 
 header h1 {
-    color: #ffd700; /* Rich gold for the main title */
+    color: #a67c00; /* Warm brown for title */
     font-size: 2.5em;
     margin: 10px 0;
 }
 
 header p {
     font-size: 1.2em;
-    color: #ffffff; /* White text for better contrast */
+    color: #ffffff; /* White text for contrast */
 }
 
 header .cta-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #ffd700; /* Gold button */
-    color: #333;
+    color: #4a3c2a; /* Dark brown text */
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
@@ -44,19 +57,19 @@ header .cta-button {
 
 header .cta-button:hover {
     background-color: #e0b600; /* Slightly darker gold on hover */
-    color: #222;
+    color: #ffffff; /* White text on hover */
 }
 
 /* Navigation */
 nav {
     display: flex;
     justify-content: center;
-    background: #ffcc4d; /* Golden yellow for the nav bar */
+    background: #ffe8c2; /* Light gold */
     padding: 10px 0;
 }
 
 nav a {
-    color: #333; /* Dark text for better readability */
+    color: #4a3c2a; /* Dark brown text */
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 10px;
@@ -66,7 +79,7 @@ nav a {
 
 nav a:hover {
     background: #ffd700; /* Gold hover effect */
-    color: #000; /* Black text on hover */
+    color: #4a3c2a; /* Dark brown text on hover */
 }
 
 /* Sections */
@@ -105,18 +118,18 @@ section {
 }
 
 .feature-item h3 {
-    color: #ffd700; /* Gold for titles */
+    color: #a67c00; /* Warm brown for titles */
     margin-bottom: 10px;
 }
 
 .feature-item p {
-    color: #333; /* Dark gray for readability */
+    color: #4a3c2a; /* Dark brown for readability */
 }
 
 /* How-to-Buy Section */
 .how-to-buy h2,
 .how-to-buy p {
-    color: #333; /* Dark gray text for readability */
+    color: #4a3c2a; /* Dark brown text */
 }
 
 .buy-steps {
@@ -141,12 +154,12 @@ section {
 }
 
 .step h3 {
-    color: #ffd700; /* Gold for step titles */
+    color: #a67c00; /* Warm brown for step titles */
     margin-bottom: 10px;
 }
 
 .step p {
-    color: #333; /* Dark gray text */
+    color: #4a3c2a; /* Dark brown text */
 }
 
 /* Footer */
