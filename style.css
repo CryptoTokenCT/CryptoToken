@@ -154,7 +154,12 @@ section {
 }
 
 .step p {
-    color: #f0f0f0;
+    color: #ffffff; /* Updated to match the white color for better readability */
+}
+
+.how-to-buy h2, 
+.how-to-buy p {
+    color: #ffffff; /* Ensures all text in the "How to Buy" section matches the white color */
 }
 
 /* Footer */
