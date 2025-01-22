@@ -6,14 +6,6 @@ window.addEventListener('load', () => {
     }
 });
 
-// Fallback: Hide the spinner after 5 seconds in case the load event fails
-setTimeout(() => {
-    const spinner = document.getElementById('loading-spinner');
-    if (spinner && spinner.style.display !== 'none') {
-        spinner.style.display = 'none';
-    }
-}, 5000);
-
 // Scroll-to-Top Button
 const scrollToTopButton = document.getElementById('scrollToTop');
 
