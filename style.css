@@ -1,15 +1,18 @@
+/* General Styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
     background: linear-gradient(to right, #ffefba, #ffffff);
     color: #333;
 }
 
+/* Header Styles */
 header {
     text-align: center;
     padding: 20px;
     background-color: #FFD700;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
@@ -20,7 +23,7 @@ header .logo {
 header h1 {
     margin: 10px 0;
     font-size: 2.5em;
-    color: #333;
+    color: #000; /* Improved contrast */
 }
 
 header p {
@@ -28,6 +31,7 @@ header p {
     color: #555;
 }
 
+/* Navigation Styles */
 nav {
     display: flex;
     justify-content: center;
@@ -42,13 +46,16 @@ nav a {
     margin: 0 10px;
     font-size: 1.1em;
     border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
-    background: #FFD700;
-    color: #000;
+    background: #ffd700;
+    color: #222;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* Main Content Styles */
 main {
     padding: 20px;
     text-align: center;
@@ -56,14 +63,31 @@ main {
 
 section {
     margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #444;
+    background: #222; /* Improved contrast */
     color: #fff;
-    position: fixed;
-    width: 100%;
+    position: sticky;
     bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
 }
