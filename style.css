@@ -7,107 +7,6 @@ body {
     color: #4a3c2a; /* Dark brown text */
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #4a3c2a; /* Dark brown headings */
-    text-transform: capitalize;
-}
-
-p, a {
-    color: #4a3c2a; /* Dark brown text */
-}
-
-a:hover {
-    color: #ffd700; /* Gold hover effect for links */
-    text-decoration: underline;
-}
-
-/* Container: Ensure consistent width across sections */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header */
-header {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #ffcc4d; /* Golden yellow background */
-}
-
-header .logo {
-    max-width: 150px;
-    border: 4px solid #ffd700; /* Gold border */
-    border-radius: 50%;
-}
-
-header h1 {
-    color: #a67c00; /* Warm brown for title */
-    font-size: 2.5em;
-    margin: 10px 0;
-}
-
-header p {
-    font-size: 1.2em;
-    color: #ffffff; /* White text for contrast */
-}
-
-header .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ffd700; /* Gold button */
-    color: #4a3c2a; /* Dark brown text */
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-header .cta-button:hover {
-    background-color: #e0b600; /* Slightly darker gold on hover */
-    color: #ffffff; /* White text on hover */
-}
-
-/* Navigation */
-nav {
-    display: flex;
-    justify-content: center;
-    background: #ffe8c2; /* Light gold */
-    padding: 10px 0;
-    flex-wrap: wrap; /* Ensure navigation wraps on smaller screens */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-nav a {
-    color: #4a3c2a; /* Dark brown text */
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-size: 1.1em;
-    border-radius: 5px;
-}
-
-nav a:hover {
-    background: #ffd700; /* Gold hover effect */
-    color: #4a3c2a; /* Dark brown text on hover */
-}
-
-/* Section Styles */
-section {
-    padding: 60px 20px; /* Increased padding for better separation */
-    text-align: center;
-}
-
-.section-dark {
-    background: #ffd700; /* Gold background for contrast */
-    color: #4a3c2a; /* Dark brown text */
-}
-
-.section-light {
-    background: #fff4e0; /* Light beige background */
-    color: #4a3c2a; /* Dark brown text */
-}
-
 /* Section Titles */
 section h2 {
     font-size: 2.5em;
@@ -116,68 +15,30 @@ section h2 {
     text-transform: uppercase;
 }
 
-.section-divider {
-    border-bottom: 3px solid #ffd700; /* Gold divider */
-    margin: 30px auto;
-    width: 50%;
+/* Testimonials Section */
+.testimonials {
+    background: #ffe8c2; /* Light gold background */
+    padding: 40px 20px;
 }
 
-/* Features Grid */
-.feature-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+.testimonial {
+    margin-bottom: 20px; /* Space between testimonials */
 }
 
-.feature-item {
-    text-align: center;
-    background: rgba(255, 223, 117, 0.1); /* Subtle golden highlight */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1 1 300px; /* Responsive grid items */
+.testimonial p {
+    font-size: 1.2em;
+    color: #4a3c2a; /* Dark brown for text */
+    font-style: italic;
+    margin-bottom: 5px; /* Reduced space between quote and name */
 }
 
-.feature-item i {
-    color: #ffd700; /* Gold for icons */
-    margin-bottom: 10px;
+.testimonial h4 {
+    font-size: 1em;
+    color: #a67c00; /* Warm brown for names */
+    margin: 0; /* No extra margin for names */
 }
 
-.feature-item h3 {
-    color: #a67c00; /* Warm brown for titles */
-    margin-bottom: 10px;
-}
-
-.feature-item p {
-    color: #4a3c2a; /* Dark brown for readability */
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px 10px;
-    background: #ffcc4d; /* Golden yellow background */
-    color: #ffffff; /* White text */
-    font-size: 0.9em;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .feature-grid {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        gap: 20px;
-    }
-
-    nav a {
-        padding: 10px;
-        font-size: 0.9em; /* Slightly smaller font for navigation links */
-    }
-
-    header h1 {
-        font-size: 2em; /* Smaller heading on smaller screens */
-    }
+.testimonial span.name {
+    font-weight: bold;
+    color: #ffd700; /* Gold for emphasis on names */
 }
