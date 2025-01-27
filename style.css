@@ -17,12 +17,12 @@ header {
 }
 
 header .logo {
-    width: 160px; /* Larger size for zoom effect */
+    width: 160px;
     height: 160px;
     border-radius: 50%; /* Circular logo */
     border: 4px solid #aaa; /* Thin lighter grey border */
-    object-fit: cover; /* Ensure image stays cropped */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for focus */
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 header h1 {
@@ -78,29 +78,70 @@ nav a:hover {
 }
 
 /* Features Section */
-.features, .buy-steps {
+.features {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-.features .feature-box, .buy-steps .step-box {
+.features .feature-box {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow */
     width: 90%;
     max-width: 500px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
 }
 
-.features .feature-box h3, .buy-steps .step-box h3 {
+.features .feature-box img {
+    width: 40px;
+    height: 40px;
+}
+
+.features .feature-box h3 {
     color: #f0b429;
+    margin: 0;
 }
 
-.features .feature-box p, .buy-steps .step-box p {
+.features .feature-box p {
     color: #666;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+/* How to Buy Section */
+.buy-steps .step-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+}
+
+.buy-steps .step-box img {
+    width: 40px;
+    height: 40px;
+}
+
+.buy-steps .step-box h3 {
+    color: #f0b429;
+    margin: 0;
+}
+
+.buy-steps .step-box p {
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 0;
 }
 
 /* Roadmap & Tokenomics */
