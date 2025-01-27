@@ -38,10 +38,9 @@ header {
 }
 
 header img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 4px solid #d4af37; /* Circular border */
+    width: 100px;
+    border: 3px solid #d4af37; /* Circular border */
+    border-radius: 50%; /* Ensures the circular shape */
     margin-bottom: 10px;
 }
 
@@ -51,17 +50,37 @@ header h1 {
 }
 
 .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
     margin-top: 10px;
 }
 
 .social-icons a img {
-    width: 40px;
-    margin: 0 10px;
+    width: 40px; /* Adjusted size */
+    height: 40px;
+    border-radius: 50%;
     transition: transform 0.3s ease;
 }
 
 .social-icons a img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-weight: bold;
 }
 
 /* Sections */
@@ -71,26 +90,6 @@ section {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* What is Crypto Section */
-#what-is-crypto {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#what-is-crypto h2 {
-    color: #333;
-    margin-bottom: 20px;
-}
-
-#what-is-crypto p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.1em;
-    line-height: 1.8;
-    color: #666;
 }
 
 /* Features Section */
@@ -116,11 +115,12 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Icons */
 .icon {
     width: 50px;
     height: 50px;
     display: block;
-    margin: 0 auto 10px auto; /* Centers the icons and adds spacing below */
+    margin: 0 auto 10px auto; /* Centers the icons */
 }
 
 /* How to Buy Section */
@@ -146,28 +146,19 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* About the Founder */
-.founder-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* About Section */
+.about-founder img {
+    display: block;
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.about-founder h3 {
     text-align: center;
-    margin-top: 20px;
-}
-
-.founder-image {
-    width: 150px;
-    margin-bottom: 15px;
-}
-
-.founder-details h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.founder-details p {
-    max-width: 600px;
-    line-height: 1.5;
+    margin-top: 10px;
+    color: #333;
 }
 
 /* Footer */
@@ -181,4 +172,14 @@ footer {
 footer p {
     margin: 0;
     color: #666;
+}
+
+/* FAQ Section */
+.faqs {
+    text-align: center;
+}
+
+.faqs p {
+    margin: 10px 0;
+    color: #333;
 }
