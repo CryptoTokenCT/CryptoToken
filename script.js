@@ -1,22 +1,11 @@
-// Function to remove the spinner
-function removeSpinner() {
-    const loadingSpinner = document.getElementById('loading-spinner');
-    if (loadingSpinner) {
-        loadingSpinner.style.display = 'none';
-        console.log('Spinner removed successfully.');
-    } else {
-        console.error('Spinner element not found.');
-    }
-}
-
-// DOM Content Loaded Listener
+// FAQ Toggle Functionality
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Page loaded. Removing spinner...');
-    removeSpinner();
-});
+    const faqItems = document.querySelectorAll('.faq-item h3');
 
-// Backup: Ensure spinner is removed after 5 seconds
-setTimeout(() => {
-    console.log('Backup timeout triggered. Removing spinner...');
-    removeSpinner();
-}, 5000);
+    faqItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const content = item.nextElementSibling;
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+});
