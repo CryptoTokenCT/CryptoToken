@@ -1,64 +1,65 @@
-/* General Body Style */
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+/* General Reset */
+body, html {
     margin: 0;
     padding: 0;
-    color: #333;
+    font-family: "Helvetica Neue", Arial, sans-serif;
     background-color: #f5f5f5;
+    color: #333;
     text-align: center;
 }
 
-/* Header Section */
+/* Header */
 header {
-    background-color: #f9f9f9; /* Light grey */
-    padding: 30px 20px;
-    border-bottom: 2px solid #e6e6e6;
+    background-color: #eaeaea;
+    color: #333;
+    padding: 50px 20px;
+    position: relative;
 }
 
 header .logo {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 5px solid #d4af37; /* Gold border */
-    object-fit: cover;
-    margin-bottom: 20px;
+    width: 160px; /* Larger size for zoom effect */
+    height: 160px;
+    border-radius: 50%; /* Circular logo */
+    border: 5px solid #333; /* Thin dark grey border */
+    object-fit: cover; /* Ensure image stays cropped */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for focus */
 }
 
 header h1 {
     font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 10px;
+    margin: 20px 0 10px;
 }
 
 header p {
     font-size: 1.2rem;
-    color: #666;
     margin-bottom: 20px;
+    color: #555;
 }
 
 header .cta-button {
-    background-color: #d4af37; /* Gold */
-    color: white;
+    display: inline-block;
+    background-color: #f0b429;
+    color: #fff;
     padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
     font-size: 1rem;
-    transition: background-color 0.3s;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 header .cta-button:hover {
-    background-color: #b89330; /* Darker gold */
+    background-color: #d99e21;
 }
 
-/* Navigation Bar */
+/* Navigation */
 nav {
-    background-color: #f9f9f9; /* Light grey */
-    padding: 10px 0;
-    border-bottom: 2px solid #e6e6e6;
+    background-color: #333;
+    padding: 15px 0;
 }
 
 nav a {
-    color: #333;
+    color: #f0b429;
     text-decoration: none;
     margin: 0 15px;
     font-size: 1rem;
@@ -66,84 +67,105 @@ nav a {
 }
 
 nav a:hover {
-    color: #d4af37; /* Gold on hover */
+    text-decoration: underline;
 }
 
-/* Section Styling */
-section {
-    padding: 50px 20px;
-}
-
-.section-light {
-    background-color: #ffffff;
-}
-
-.section-dark {
-    background-color: #f5f5f5; /* Very light grey */
-}
-
-/* Titles and Headings */
-h2 {
+/* Section Titles */
+.section-title {
     font-size: 2rem;
+    margin: 40px 0 20px;
     color: #333;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #e6e6e6;
-    display: inline-block;
-    padding-bottom: 5px;
 }
 
 /* Features Section */
-.feature-grid {
+.features, .buy-steps {
     display: flex;
-    flex-direction: column; /* Stacked layout */
+    flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-.feature-item {
-    background-color: #ffffff;
-    padding: 20px;
-    border: 1px solid #e6e6e6;
+.features .feature-box, .buy-steps .step-box {
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 80%;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
 }
 
-.feature-item i {
-    color: #d4af37; /* Gold */
-    margin-bottom: 10px;
+.features .feature-box h3, .buy-steps .step-box h3 {
+    color: #f0b429;
 }
 
-.feature-item h3 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.feature-item p {
+.features .feature-box p, .buy-steps .step-box p {
     color: #666;
+    margin-top: 10px;
+}
+
+/* Roadmap & Tokenomics */
+.roadmap, .tokenomics {
+    background-color: #f9f9f9;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.roadmap h2, .tokenomics h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.roadmap ul, .tokenomics ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+}
+
+.roadmap li, .tokenomics li {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* FAQ Section */
+.faqs {
+    padding: 30px 20px;
+    background-color: #f5f5f5;
+}
+
+.faqs h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.faqs .faq-item {
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faqs .faq-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #f0b429;
+}
+
+.faqs .faq-item p {
+    color: #555;
 }
 
 /* Footer */
 footer {
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #333;
+    color: #fff;
     padding: 20px 0;
-    border-top: 2px solid #e6e6e6;
+    font-size: 0.9rem;
 }
 
-/* Buttons */
-button {
-    background-color: #d4af37;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #b89330;
+footer p {
+    margin: 0;
 }
