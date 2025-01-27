@@ -107,6 +107,11 @@ nav a:hover {
 .roadmap, .tokenomics {
     background-color: #f3f3f3; /* Light grey background */
     padding: 30px 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     text-align: center;
 }
 
@@ -141,11 +146,11 @@ nav a:hover {
 }
 
 .faqs .faq-item {
-    margin-bottom: 20px;
-    text-align: left;
+    margin-bottom: 30px;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center; /* Center align the questions */
 }
 
 .faqs .faq-item h3 {
@@ -156,6 +161,7 @@ nav a:hover {
 
 .faqs .faq-item p {
     color: #555;
+    margin-top: 5px;
 }
 
 /* Footer */
