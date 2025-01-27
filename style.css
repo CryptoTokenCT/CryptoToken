@@ -35,7 +35,6 @@ header {
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
 }
 
 header img {
@@ -50,18 +49,15 @@ header h1 {
 
 .social-icons {
     margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
 }
 
-.social-icons img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.2s;
+.social-icons a img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
 }
 
-.social-icons img:hover {
+.social-icons a img:hover {
     transform: scale(1.2);
 }
 
@@ -97,7 +93,6 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Icons */
 .icon {
     width: 50px;
     height: 50px;
@@ -108,54 +103,49 @@ section {
 /* How to Buy Section */
 .steps {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-around;
     text-align: center;
 }
 
 .step {
-    flex: 1 1 calc(33.33% - 20px);
-    margin: 10px;
+    flex: 1 1 30%;
+    margin: 20px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
     transition: transform 0.2s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .step:hover {
     transform: translateY(-10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* FAQ Section */
-section h3 {
-    text-align: center;
-    margin: 20px 0 10px;
-}
-
-section p {
-    text-align: center;
-    margin: 10px 0;
-}
-
-/* Founder Section */
+/* About the Founder */
 .founder-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 40px 20px;
-}
-
-.founder-details {
-    display: inline-block;
-    text-align: center;
-    max-width: 600px;
+    margin-top: 20px;
 }
 
 .founder-image {
-    width: 300px;
-    height: auto;
+    width: 150px;
     margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.founder-details h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.founder-details p {
+    max-width: 600px;
+    line-height: 1.5;
 }
 
 /* Footer */
