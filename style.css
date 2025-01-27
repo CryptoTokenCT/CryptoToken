@@ -38,7 +38,7 @@ header {
 }
 
 header img {
-    width: 120px;
+    width: 100px;
     border: 2px solid #888;
     border-radius: 50%;
     margin-bottom: 10px;
@@ -47,29 +47,6 @@ header img {
 header h1 {
     font-size: 2.5em;
     color: #333;
-    margin-bottom: 20px;
-}
-
-.social-links-header {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.social-links-header a {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-}
-
-.social-links-header img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.social-links-header img:hover {
-    transform: scale(1.1);
 }
 
 /* Navigation */
@@ -78,7 +55,6 @@ nav ul {
     justify-content: center;
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 nav ul li {
@@ -152,62 +128,52 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Roadmap Section */
-.roadmap-box {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.roadmap-box ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.roadmap-box li {
-    margin: 10px 0;
-    font-size: 1.1em;
-}
-
-/* Tokenomics Section */
-.tokenomics-box {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.tokenomics-box ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.tokenomics-box li {
-    margin: 10px 0;
-    font-size: 1.1em;
-}
-
 /* FAQ Section */
-.faq-box {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.faq-container {
     text-align: center;
 }
 
-.faq-box h3 {
+.faq-container h3 {
     margin-bottom: 10px;
-    font-size: 1.5em;
     color: #333;
 }
 
-.faq-box p {
+.faq-container p {
     margin-bottom: 20px;
-    font-size: 1.1em;
+    color: #666;
+}
+
+/* Founder Section */
+.founder-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.founder-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.founder-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.founder-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #d4af37;
+    margin-bottom: 20px;
+}
+
+.founder-details p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+    line-height: 1.6;
 }
 
 /* Footer */
@@ -221,4 +187,19 @@ footer {
 footer p {
     margin: 0;
     color: #666;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.2s;
+}
+
+footer .social-links img:hover {
+    transform: scale(1.1);
 }
