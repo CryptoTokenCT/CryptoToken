@@ -38,9 +38,9 @@ header {
 }
 
 header img {
-    width: 100px;
-    border: 5px solid #555; /* Light grey border for the logo */
-    border-radius: 50%; /* Circular logo border */
+    width: 130px; /* Slightly larger logo size */
+    border: 2px solid #ccc; /* Thin light grey border for logo */
+    border-radius: 50%; /* Circular logo */
     margin-bottom: 10px;
 }
 
@@ -49,11 +49,16 @@ header h1 {
     color: #333;
 }
 
-header .social-icons img {
-    width: 40px;
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 40px; /* Adjusted size for social icons */
     height: 40px;
-    margin: 0 10px;
-    border: none; /* Remove circle and border from social media icons */
+    border: none; /* Removed any borders for icons */
 }
 
 /* Sections */
@@ -65,12 +70,20 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.faq-section h2 {
-    text-decoration: underline; /* Underline for FAQs title */
+/* FAQs Section */
+.faq-section {
+    text-align: center;
+    padding: 40px 20px;
 }
 
-.faq {
-    text-align: center;
+.faq-section h2 {
+    text-decoration: underline; /* Underline the "FAQs" title */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.faq p {
+    text-align: center; /* Center FAQ answers */
 }
 
 /* Features Section */
@@ -96,12 +109,11 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Icons */
 .icon {
     width: 50px;
     height: 50px;
     display: block;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 10px auto; /* Centers the icons and adds spacing below */
 }
 
 /* How to Buy Section */
@@ -127,36 +139,31 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Founders Section */
-.founder-container {
+.step img {
+    width: 40px; /* Resized step icons to be consistent */
+    height: 40px;
+}
+
+/* About the Founders Section */
+.founders-section {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    margin-top: 40px;
 }
 
 .founder {
-    text-align: center;
-    margin: 20px;
+    flex: 1 1 30%;
 }
 
 .founder img {
-    width: 150px;
-    height: 150px;
+    width: 120px; /* Consistent circular images */
+    height: 120px;
     border: 2px solid #ccc; /* Light grey border */
-    border-radius: 50%; /* Perfect circle */
-    object-fit: cover;
-}
-
-.founder h3 {
-    margin-top: 10px;
-    font-size: 1.2em;
-    color: #333;
-}
-
-.founder p {
-    font-size: 0.9em;
-    color: #555;
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 10px;
 }
 
 /* Footer */
