@@ -40,22 +40,17 @@ header {
 header img {
     width: 100px;
     height: 100px;
+    border: 3px solid #888; /* Thin dark grey border */
     border-radius: 50%;
-    border: 2px solid darkgrey;
-    margin-bottom: 10px;
 }
 
-header h1 {
-    font-size: 2.5em;
-    color: #333;
-}
-
-.social-links {
+.social-icons {
     margin-top: 10px;
 }
 
-.social-links img {
-    width: 40px;
+.social-icons img {
+    width: 40px; /* Smaller size for icons */
+    height: 40px; /* Maintain aspect ratio */
     margin: 0 10px;
 }
 
@@ -68,33 +63,9 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.about-founder {
-    text-align: center;
-}
-
-.founders {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-.founder img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid lightgrey;
-}
-
-.founder h3 {
-    margin-top: 10px;
-    font-size: 1.2em;
+h2 {
     color: #333;
-}
-
-.founder p {
-    font-size: 0.9em;
-    color: #555;
+    font-size: 24px;
 }
 
 /* Features Section */
@@ -120,13 +91,6 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.icon {
-    width: 50px;
-    height: 50px;
-    display: block;
-    margin: 0 auto 10px auto;
-}
-
 /* How to Buy Section */
 .steps {
     display: flex;
@@ -145,27 +109,65 @@ section {
     transition: transform 0.2s;
 }
 
+.step img {
+    width: 50px; /* Properly sized icons */
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
 .step:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* FAQ Section */
-#faqs {
+/* About Section */
+#about-founder {
     text-align: center;
-    padding: 40px 20px;
 }
 
-#faqs h3 {
-    font-size: 1.4em;
-    margin-top: 20px;
+.founder {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.founder img {
+    width: 150px; /* Circular images */
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ccc; /* Light grey border */
+    object-fit: cover; /* Ensure proper cropping */
+}
+
+.founder h4 {
+    margin-top: 10px;
+    font-size: 18px;
     color: #333;
 }
 
-#faqs p {
-    font-size: 1em;
-    margin: 10px 0;
-    color: #555;
+.founder p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 0 0;
+}
+
+/* FAQ Section */
+#faq {
+    text-align: center;
+}
+
+#faq h2 {
+    margin-bottom: 30px;
+}
+
+#faq .question {
+    margin: 20px 0;
+}
+
+#faq .question p {
+    margin: 0;
+    font-size: 16px;
 }
 
 /* Footer */
