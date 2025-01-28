@@ -39,7 +39,7 @@ header {
 
 header img {
     width: 100px;
-    border: 4px solid #888; /* Border for the main logo */
+    border: 2px solid #888;
     border-radius: 50%;
     margin-bottom: 10px;
 }
@@ -49,16 +49,20 @@ header h1 {
     color: #333;
 }
 
-.social-icons img {
-    width: 30px; /* Normal size for Twitter and Discord icons */
-    height: auto;
-    border: none; /* Remove circle border */
-    margin: 0 10px;
-    transition: transform 0.2s;
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
 }
 
-.social-icons img:hover {
-    transform: scale(1.1);
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-weight: bold;
 }
 
 /* Sections */
@@ -93,11 +97,12 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Icons */
 .icon {
-    width: 50px; /* Normal size for icons throughout the website */
-    height: auto;
+    width: 50px;
+    height: 50px;
     display: block;
-    margin: 0 auto 10px auto; /* Centers the icons and adds spacing below */
+    margin: 0 auto 10px auto;
 }
 
 /* How to Buy Section */
@@ -118,60 +123,9 @@ section {
     transition: transform 0.2s;
 }
 
-.step img {
-    width: 50px; /* Normal size for step icons */
-    height: auto;
-    margin-bottom: 10px;
-}
-
 .step:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Founder Section */
-.founder {
-    text-align: center;
-    margin: 20px;
-}
-
-.founder img {
-    width: 120px; /* Normal size for founder photos */
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid #ccc; /* Light grey border for founder photos */
-}
-
-.founder h4 {
-    margin-top: 10px;
-    font-size: 1.2em;
-    color: #333;
-}
-
-.founder p {
-    font-size: 0.9em;
-    color: #666;
-}
-
-/* FAQ Section */
-#faq {
-    text-align: center;
-}
-
-#faq .question {
-    margin-bottom: 20px;
-}
-
-#faq h3 {
-    margin-bottom: 10px;
-    font-size: 1.5em;
-    color: #333;
-}
-
-#faq p {
-    font-size: 1em;
-    color: #666;
 }
 
 /* Footer */
@@ -185,4 +139,50 @@ footer {
 footer p {
     margin: 0;
     color: #666;
+}
+
+/* FAQ Section */
+.faq-section h2 {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.faq-section h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #d4af37;
+    margin: 10px auto 0;
+}
+
+/* Founder Section */
+.founder-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.founder {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.founder img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #d4af37;
+}
+
+.founder h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.founder p {
+    font-size: 0.95em;
+    color: #555;
 }
