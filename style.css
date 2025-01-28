@@ -39,7 +39,7 @@ header {
 
 header img {
     width: 120px;
-    border: 2px solid #d3d3d3;
+    border: 2px solid lightgray;
     border-radius: 50%;
     margin-bottom: 10px;
 }
@@ -74,14 +74,36 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* "What is Crypto Token?" Section */
-.what-is-crypto-section {
+section.centered {
     text-align: center;
-    padding: 40px 20px;
-    margin-bottom: 20px;
-    background: #fff;
+    padding: 50px 20px;
+    margin: 20px 0;
     border-radius: 8px;
+    background: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Icons */
+.icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto 10px auto; /* Centers the icons and adds spacing below */
+}
+
+/* Twitter and Discord */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border: none; /* Removes circle and border */
 }
 
 /* Features Section */
@@ -107,63 +129,74 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Icons */
-.icon {
-    width: 50px;
-    height: 50px;
-    display: block;
-    margin: 0 auto 10px auto; /* Centers the icons and adds spacing below */
+/* How to Buy Section */
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
 }
 
-/* Founders Section */
-.founders-section {
-    text-align: center;
-    padding: 40px 20px;
+.step {
+    flex: 1 1 30%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.2s;
+}
+
+.step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQs */
+.faqs {
+    text-align: center; /* Center aligns the FAQs */
     margin-bottom: 20px;
 }
 
-.founder {
-    display: inline-block;
+.faqs h2 {
+    text-decoration: underline; /* Adds an underline */
     text-align: center;
-    margin: 20px;
-    padding: 20px;
+}
+
+.faqs p {
+    text-align: center;
+}
+
+/* About the Founders */
+.founders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.founder {
+    text-align: center;
 }
 
 .founder img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 2px solid #d3d3d3;
+    border: 2px solid lightgray;
     object-fit: cover;
-    object-position: center;
 }
 
 .founder h3 {
-    margin: 15px 0 10px 0;
+    margin: 10px 0 5px 0;
+    font-size: 1.2em;
+    color: #333;
 }
 
 .founder p {
-    color: #555;
-    font-size: 0.95em;
-}
-
-/* FAQ Section */
-.faq-section h2 {
-    text-align: center;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #333;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-.faqs {
-    text-align: center;
-    margin: 20px auto;
-    max-width: 800px;
-}
-
-.faqs p {
-    text-align: center;
+    color: #666;
 }
 
 /* Footer */
