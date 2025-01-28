@@ -40,8 +40,8 @@ header {
 header img {
     width: 100px;
     height: 100px;
-    border-radius: 50%; /* Keeps the logo circular */
-    border: 3px solid #555; /* Smaller border and dark grey color */
+    border-radius: 50%;
+    border: 2px solid darkgrey;
     margin-bottom: 10px;
 }
 
@@ -50,35 +50,13 @@ header h1 {
     color: #333;
 }
 
-/* Social Icons */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 10px 0;
+.social-links {
+    margin-top: 10px;
 }
 
-.social-icons img.no-border {
+.social-links img {
     width: 40px;
-    height: 40px;
-    border: none; /* Removes the border */
-    border-radius: 0; /* No circular shape */
-}
-
-/* Navigation */
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    font-weight: bold;
+    margin: 0 10px;
 }
 
 /* Sections */
@@ -90,25 +68,33 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-section#about {
-    padding: 20px;
+.about-founder {
     text-align: center;
-    background-color: #f9f9f9;
 }
 
-section#about h2 {
-    margin-bottom: 15px;
+.founders {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
-/* FAQ Section */
-.faqs {
-    text-align: center; /* Center-aligns the FAQs */
+.founder img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid lightgrey;
 }
 
-.faqs p {
-    max-width: 800px;
-    margin: 10px auto;
-    line-height: 1.6;
+.founder h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.founder p {
+    font-size: 0.9em;
+    color: #555;
 }
 
 /* Features Section */
@@ -134,12 +120,11 @@ section#about h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Icons */
 .icon {
     width: 50px;
     height: 50px;
     display: block;
-    margin: 0 auto 10px auto; /* Centers the icons and adds spacing below */
+    margin: 0 auto 10px auto;
 }
 
 /* How to Buy Section */
@@ -165,28 +150,22 @@ section#about h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* About the Founder */
-.about-founder {
+/* FAQ Section */
+#faqs {
     text-align: center;
-    margin-top: 30px;
+    padding: 40px 20px;
 }
 
-.about-founder img {
-    width: 150px;
-    height: auto;
-    border-radius: 0; /* Removed circular border */
-    border: none;
-    margin-bottom: 10px;
-}
-
-.about-founder h3 {
-    margin-bottom: 5px;
+#faqs h3 {
+    font-size: 1.4em;
+    margin-top: 20px;
     color: #333;
 }
 
-.about-founder p {
-    font-size: 0.9em;
-    color: #666;
+#faqs p {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #555;
 }
 
 /* Footer */
