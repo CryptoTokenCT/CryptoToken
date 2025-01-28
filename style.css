@@ -39,8 +39,8 @@ header {
 
 header img {
     width: 100px;
-    border: 2px solid #888;
-    border-radius: 50%;
+    border: 5px solid #555; /* Light grey border for the logo */
+    border-radius: 50%; /* Circular logo border */
     margin-bottom: 10px;
 }
 
@@ -49,20 +49,11 @@ header h1 {
     color: #333;
 }
 
-/* Navigation */
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    font-weight: bold;
+header .social-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border: none; /* Remove circle and border from social media icons */
 }
 
 /* Sections */
@@ -72,6 +63,14 @@ section {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h2 {
+    text-decoration: underline; /* Underline for FAQs title */
+}
+
+.faq {
+    text-align: center;
 }
 
 /* Features Section */
@@ -128,6 +127,38 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Founders Section */
+.founder-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.founder {
+    text-align: center;
+    margin: 20px;
+}
+
+.founder img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ccc; /* Light grey border */
+    border-radius: 50%; /* Perfect circle */
+    object-fit: cover;
+}
+
+.founder h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.founder p {
+    font-size: 0.9em;
+    color: #555;
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -139,50 +170,4 @@ footer {
 footer p {
     margin: 0;
     color: #666;
-}
-
-/* FAQ Section */
-.faq-section h2 {
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.faq-section h2::after {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 3px;
-    background-color: #d4af37;
-    margin: 10px auto 0;
-}
-
-/* Founder Section */
-.founder-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.founder {
-    text-align: center;
-    margin: 0 20px;
-}
-
-.founder img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #d4af37;
-}
-
-.founder h3 {
-    margin: 10px 0 5px;
-    font-size: 1.2em;
-}
-
-.founder p {
-    font-size: 0.95em;
-    color: #555;
 }
