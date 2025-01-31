@@ -38,28 +38,15 @@ header {
 }
 
 header img {
-    width: 120px;
-    border: 2px solid #ccc;
+    width: 100px;
+    border: 2px solid #d3d3d3; /* Light grey border */
     border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 header h1 {
     font-size: 2.5em;
     color: #333;
-    margin-top: 10px;
-}
-
-header .social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    gap: 20px;
-}
-
-header .social-icons img {
-    width: 40px;
-    height: 40px;
-    border: none; /* Removed the border */
 }
 
 /* Navigation */
@@ -115,7 +102,10 @@ section {
     width: 50px;
     height: 50px;
     display: block;
-    margin: 0 auto 10px auto; /* Centers the icons and adds spacing below */
+    margin: 0 auto 10px auto;
+    object-fit: contain; /* Ensures icons retain their aspect ratio */
+    object-position: center;
+    border: none; /* Removes borders */
 }
 
 /* How to Buy Section */
@@ -141,65 +131,50 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* About the Founders Section */
-.founders {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    text-align: center;
-    margin-top: 30px;
-}
-
+/* Founders Section */
 .founder {
-    flex: 1;
-    max-width: 300px;
+    text-align: center;
+    margin: 20px;
 }
 
 .founder img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 2px solid #ccc;
+    border: 2px solid #ccc; /* Light grey border */
+    object-fit: cover; /* Ensures images are not stretched */
+    object-position: center; /* Keeps the focus on the center of the image */
 }
 
 .founder h3 {
-    margin-top: 15px;
-    font-size: 1.5em;
+    margin-top: 10px;
+    font-size: 1.2em;
 }
 
 .founder p {
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 1em;
     color: #666;
 }
 
-/* FAQs Section */
-#faqs {
+/* FAQs */
+.faq-section h2 {
     text-align: center;
-    margin: 0 auto;
-}
-
-#faqs h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
     position: relative;
+    margin-bottom: 10px;
 }
 
-#faqs h2::after {
-    content: "";
+.faq-section h2:after {
+    content: '';
     display: block;
-    width: 60px;
+    width: 50px;
     height: 2px;
-    background-color: #d4af37;
-    margin: 10px auto 0 auto;
+    background: #d4af37;
+    margin: 10px auto;
 }
 
-#faqs p {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
+.faqs {
+    text-align: center; /* Centers the FAQ answers */
 }
 
 /* Footer */
