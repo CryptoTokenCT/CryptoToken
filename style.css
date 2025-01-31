@@ -38,9 +38,9 @@ header {
 }
 
 header img {
-    width: 100px;
-    border: 2px solid #d3d3d3; /* Light grey border */
-    border-radius: 50%;
+    width: 120px; /* Larger logo size */
+    border: 1px solid #d3d3d3; /* Thin light grey border */
+    border-radius: 50%; /* Circle shape */
     margin-bottom: 10px;
 }
 
@@ -99,13 +99,13 @@ section {
 
 /* Icons */
 .icon {
-    width: 50px;
-    height: 50px;
-    display: block;
-    margin: 0 auto 10px auto;
-    object-fit: contain; /* Ensures icons retain their aspect ratio */
-    object-position: center;
-    border: none; /* Removes borders */
+    width: 40px; /* Proper icon size */
+    height: 40px;
+    display: inline-block;
+    margin: 0 10px; /* Spacing between icons */
+    object-fit: contain; /* Prevents stretching */
+    object-position: center; /* Center alignment */
+    border: none; /* Ensures no borders */
 }
 
 /* How to Buy Section */
@@ -142,8 +142,8 @@ section {
     height: 150px;
     border-radius: 50%;
     border: 2px solid #ccc; /* Light grey border */
-    object-fit: cover; /* Ensures images are not stretched */
-    object-position: center; /* Keeps the focus on the center of the image */
+    object-fit: cover; /* Ensures images retain their aspect ratio */
+    object-position: center; /* Keeps focus on center of image */
 }
 
 .founder h3 {
