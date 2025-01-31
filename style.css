@@ -99,13 +99,15 @@ section {
 
 /* Icons */
 .icon {
-    width: 40px; /* Proper icon size */
-    height: 40px;
+    width: 24px; /* Smaller and consistent size */
+    height: 24px;
     display: inline-block;
-    margin: 0 10px; /* Spacing between icons */
+    margin: 0 5px; /* Adjusted spacing between icons */
     object-fit: contain; /* Prevents stretching */
-    object-position: center; /* Center alignment */
-    border: none; /* Ensures no borders */
+    object-position: center; /* Ensures proper alignment */
+    border: none; /* Removed all borders */
+    background: none; /* Ensures no background effects */
+    padding: 0; /* Ensures no extra padding */
 }
 
 /* How to Buy Section */
