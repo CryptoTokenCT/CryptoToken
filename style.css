@@ -59,6 +59,7 @@ header .social-icons {
 header .social-icons img {
     width: 40px;
     height: 40px;
+    border: none; /* Removed borders */
 }
 
 /* Navigation */
@@ -115,6 +116,7 @@ section {
     height: 50px;
     display: block;
     margin: 0 auto 10px auto; /* Centers the icons and adds spacing below */
+    border: none; /* Removed borders for all icons */
 }
 
 /* How to Buy Section */
@@ -156,7 +158,7 @@ section {
 
 .founder img {
     width: 150px;
-    height: 150px;
+    height: auto; /* Ensures aspect ratio is maintained */
     border-radius: 50%;
     border: 2px solid #ccc;
 }
