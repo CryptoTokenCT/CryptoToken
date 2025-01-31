@@ -39,7 +39,7 @@ header {
 
 header img {
     width: 120px;
-    border: 2px solid lightgray;
+    border: 2px solid #d3d3d3;
     border-radius: 50%;
     margin-bottom: 10px;
 }
@@ -47,6 +47,18 @@ header img {
 header h1 {
     font-size: 2.5em;
     color: #333;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
 }
 
 /* Navigation */
@@ -74,129 +86,80 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-section.centered {
+.centered {
     text-align: center;
-    padding: 50px 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Icons */
-.icon {
+.features, .steps, .founders {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature, .step, .founder {
+    flex: 1 1 30%;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.2s;
+}
+
+.feature:hover, .step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature img, .step img, .founder img {
     width: 50px;
     height: 50px;
+    margin-bottom: 10px;
     display: block;
-    margin: 0 auto 10px auto; /* Centers the icons and adds spacing below */
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Twitter and Discord */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.social-icons img {
-    width: 40px;
-    height: 40px;
-    border: none; /* Removes circle and border */
-}
-
-/* Features Section */
-.features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-}
-
-.feature {
-    flex: 1 1 30%;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    transition: transform 0.2s;
-}
-
-.feature:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* How to Buy Section */
-.steps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-}
-
-.step {
-    flex: 1 1 30%;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    transition: transform 0.2s;
-}
-
-.step:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* FAQs */
-.faqs {
-    text-align: center; /* Center aligns the FAQs */
-    margin-bottom: 20px;
-}
-
-.faqs h2 {
-    text-decoration: underline; /* Adds an underline */
-    text-align: center;
-}
-
-.faqs p {
-    text-align: center;
-}
-
-/* About the Founders */
-.founders {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.founder {
-    text-align: center;
-}
-
+/* Founders */
 .founder img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 2px solid lightgray;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #d3d3d3;
 }
 
 .founder h3 {
-    margin: 10px 0 5px 0;
+    margin-top: 10px;
     font-size: 1.2em;
-    color: #333;
 }
 
 .founder p {
-    color: #666;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+/* FAQs */
+.faqs h2 {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.faqs h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #333;
+    margin: 10px auto 0;
+}
+
+.faqs p {
+    margin-top: 10px;
+    text-align: center;
 }
 
 /* Footer */
