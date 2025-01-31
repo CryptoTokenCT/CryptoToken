@@ -1,176 +1,135 @@
-/* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Crypto Token Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/CT2.png" alt="Crypto Token Logo">
+        <h1>Official Crypto Token Hub</h1>
+        <div class="social-icons">
+            <a href="https://x.com/CryptoTokenCT" target="_blank">
+                <img src="images/twitter-alt-circle.png" alt="Twitter">
+            </a>
+            <a href="https://discord.gg/7RRqXnvDRw" target="_blank">
+                <img src="images/discord.png" alt="Discord">
+            </a>
+            <a href="https://www.reddit.com/r/CryptoTokenCT/" target="_blank">
+                <img src="images/reddit.png" alt="Reddit">
+            </a>
+        </div>
+    </header>
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+    <nav>
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-to-buy">How to Buy</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#tokenomics">Tokenomics</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+        </ul>
+    </nav>
 
-h1, h2, h3 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
+    <section id="what-is-crypto" class="centered">
+        <h2>What is Crypto Token?</h2>
+        <p>
+            Crypto Token is a next-generation cryptocurrency designed to make crypto simple, fun, and rewarding.
+            With community-driven innovation and a vision for the future, Crypto Token is here to change the game. 🚀
+        </p>
+    </section>
 
-a {
-    color: #d4af37;
-    text-decoration: none;
-}
+    <section id="features" class="centered">
+        <h2>Why Choose Crypto Token?</h2>
+        <div class="features">
+            <div class="feature">
+                <img src="images/earth-americas.png" alt="Globally Accessible" class="icon">
+                <h3>Globally Accessible</h3>
+                <p>Anyone, anywhere can join the Crypto Token community and be part of the movement.</p>
+            </div>
+            <div class="feature">
+                <img src="images/chart-line-up.png" alt="Built for the Future" class="icon">
+                <h3>Built for the Future</h3>
+                <p>Designed for adaptability and growth in the ever-evolving world of blockchain.</p>
+            </div>
+            <div class="feature">
+                <img src="images/group-community-social-media.png" alt="Community Driven" class="icon">
+                <h3>Community Driven</h3>
+                <p>Powered by the people. Together, we'll shape the future of Crypto Token.</p>
+            </div>
+        </div>
+    </section>
 
-a:hover {
-    text-decoration: underline;
-}
+    <section id="how-to-buy" class="centered">
+        <h2>How to Buy Crypto Token</h2>
+        <div class="steps">
+            <div class="step">
+                <img src="images/wallet.png" alt="Get a Wallet" class="icon">
+                <h3>Step 1: Get a Wallet</h3>
+                <p>Download <a href="https://metamask.io/" target="_blank">MetaMask</a> or <a href="https://trustwallet.com/" target="_blank">Trust Wallet</a> to securely store your crypto.</p>
+            </div>
+            <div class="step">
+                <img src="images/coins.png" alt="Buy Ethereum (ETH)" class="icon">
+                <h3>Step 2: Buy Ethereum (ETH)</h3>
+                <p>Purchase ETH on an exchange like <a href="https://www.coinbase.com/" target="_blank">Coinbase</a> or <a href="https://www.kraken.com/" target="_blank">Kraken</a>, then send it to your wallet address.</p>
+            </div>
+            <div class="step">
+                <img src="images/calendar-shift-swap.png" alt="Swap ETH for Crypto Token" class="icon">
+                <h3>Step 3: Swap ETH for Crypto Token</h3>
+                <p>Go to <a href="https://uniswap.org/" target="_blank">Uniswap</a>, connect your wallet, and paste this contract address: <br>
+                <code>0xd1188505C76c942ae9E1A17B3FBb950e7874E79f</code></p>
+            </div>
+        </div>
+    </section>
 
-/* Header */
-header {
-    background-color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+    <section id="roadmap" class="centered">
+        <h2>Roadmap</h2>
+        <ul>
+            <li>Phase 1: Launch and Initial Listings</li>
+            <li>Phase 2: Community Growth & Strategic Partnerships</li>
+            <li>Phase 3: Decentralized Applications (dApps) and Utility Integration</li>
+            <li>Phase 4: To the Moon! 🚀</li>
+        </ul>
+    </section>
 
-header img {
-    width: 120px;
-    border: 2px solid #d3d3d3;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
+    <section id="tokenomics" class="centered">
+        <h2>Tokenomics</h2>
+        <p><strong>50%</strong>: Community Rewards</p>
+        <p><strong>25%</strong>: Development</p>
+        <p><strong>15%</strong>: Marketing</p>
+        <p><strong>10%</strong>: Liquidity</p>
+    </section>
 
-header h1 {
-    font-size: 2.5em;
-    color: #333;
-}
+    <section id="faqs" class="faqs">
+        <h2>FAQs</h2>
+        <p><strong>What is Crypto Token?</strong></p>
+        <p>Crypto Token is a next-gen cryptocurrency designed for fun, simplicity, and innovation.</p>
+        <p><strong>How do I buy Crypto Token?</strong></p>
+        <p>Follow the steps above to get started with Crypto Token in minutes.</p>
+        <p><strong>Is Crypto Token safe to invest in?</strong></p>
+        <p>Crypto Token is built on secure blockchain technology. Always research and invest responsibly.</p>
+    </section>
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
+    <section id="about" class="centered">
+        <h2>About the Founders</h2>
+        <div class="founders">
+            <div class="founder">
+                <img src="images/Me.png" alt="Daniel Cavaiani">
+                <h3>Daniel Cavaiani</h3>
+                <p>Founder of Crypto Token, Daniel Cavaiani is a forward-thinking innovator with a strong passion for blockchain technology and its potential to revolutionize industries. With a background in software development and cryptocurrency strategy, Daniel leads the Crypto Token project with a vision of simplicity and inclusivity for all users.</p>
+            </div>
+            <div class="founder">
+                <img src="images/Toby Martin.jpeg" alt="Toby Martin">
+                <h3>Toby Martin</h3>
+                <p>Co-Founder of Crypto Token, Toby Martin is a dedicated entrepreneur with a keen focus on expanding the project’s global reach and strategic partnerships. His experience in business development and community building ensures that Crypto Token remains a leader in fostering trust and collaboration within the cryptocurrency space.</p>
+            </div>
+        </div>
+    </section>
 
-.social-icons img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-}
-
-/* Navigation */
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    font-weight: bold;
-}
-
-/* Sections */
-section {
-    padding: 40px 20px;
-    margin-bottom: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.centered {
-    text-align: center;
-}
-
-.features, .steps, .founders {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.feature, .step, .founder {
-    flex: 1 1 30%;
-    max-width: 300px;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    transition: transform 0.2s;
-}
-
-.feature:hover, .step:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.feature img, .step img, .founder img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Founders */
-.founder img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid #d3d3d3;
-}
-
-.founder h3 {
-    margin-top: 10px;
-    font-size: 1.2em;
-}
-
-.founder p {
-    margin-top: 5px;
-    font-size: 0.9em;
-}
-
-/* FAQs */
-.faqs h2 {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-.faqs h2::after {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 2px;
-    background: #333;
-    margin: 10px auto 0;
-}
-
-.faqs p {
-    margin-top: 10px;
-    text-align: center;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f1f1f1;
-    margin-top: 20px;
-}
-
-footer p {
-    margin: 0;
-    color: #666;
-}
+    <footer>
+        <p>© 2025 Official Crypto Token Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
