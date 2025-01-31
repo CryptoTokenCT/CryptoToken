@@ -59,6 +59,7 @@ header .social-icons {
 header .social-icons img {
     width: 40px;
     height: 40px;
+    border: none; /* Removed the border */
 }
 
 /* Navigation */
